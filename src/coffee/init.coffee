@@ -8,9 +8,11 @@ require.config
 		backbone: 
 			deps: ["underscore", "json2", "jquery"]
 			exports: "Backbone"
-		"backbone.marionette": 
+		marionette: 
 			deps: ["backbone"]
-			exports: ["Backbone.Marionette"]
+			exports: "Backbone.Marionette"
+		jade:
+			exports: "jade"
 
 require [
 	"app/main"
